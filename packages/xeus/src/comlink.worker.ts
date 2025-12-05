@@ -46,7 +46,6 @@ export class XeusComlinkKernel extends EmpackedXeusRemoteKernel {
 
   storeAsGlobal(object: any, name: string) {
     globalThis[name] = object;
-    console.log(`Stored object as globalThis.${name}`);
   }
 
   async callGlobalReceiver(
